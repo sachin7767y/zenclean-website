@@ -3,85 +3,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZenClean - Premium Cleaning Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            background: #111;
+            color: #fff;
+            text-align: center;
             overflow-x: hidden;
         }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
         header {
-            background: #333;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
+            background: #222;
+            padding: 20px;
             font-size: 24px;
+            font-weight: bold;
         }
         .services, .testimonials, .referral {
-            text-align: center;
-            margin: 40px 0;
+            padding: 50px 20px;
         }
-        .services div, .testimonials div, .referral div {
-            background: #fff;
+        .service-box, .testimonial-box {
+            background: #333;
             padding: 20px;
-            margin: 20px;
-            display: inline-block;
-            width: 30%;
+            margin: 10px auto;
+            width: 80%;
+            max-width: 400px;
             border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
-        .testimonial-container {
+        .testimonials-container {
             display: flex;
-            overflow-x: auto;
-            white-space: nowrap;
-            scroll-behavior: smooth;
+            overflow: hidden;
+            width: 100%;
         }
-        .testimonial-container::-webkit-scrollbar {
-            display: none;
+        .testimonials-wrapper {
+            display: flex;
+            animation: scroll 10s linear infinite;
         }
-        .testimonial {
-            min-width: 300px;
-            background: white;
-            padding: 20px;
-            margin: 10px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        @keyframes scroll {
+            from { transform: translateX(100%); }
+            to { transform: translateX(-100%); }
+        }
+        .referral {
+            background: #222;
+            padding: 30px;
+        }
+        .referral-btn {
+            background: #ffcc00;
+            padding: 10px 20px;
+            border: none;
+            color: #111;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
-    <header>ZenClean - Premium Commercial Cleaning Services</header><div class="container">
-    <section class="services">
-        <h2>Our Services</h2>
-        <div>Junk Removal</div>
-        <div>Window Cleaning</div>
-        <div>Office Cleaning</div>
-    </section>
-    
-    <section class="testimonials">
-        <h2>What Our Clients Say</h2>
-        <div class="testimonial-container">
-            <div class="testimonial">"ZenClean transformed our office! Highly recommended." - John Smith</div>
-            <div class="testimonial">"Reliable and professional. Our restaurant has never been cleaner!" - Sarah Johnson</div>
-            <div class="testimonial">"Exceptional service! We will definitely hire them again." - Michael Lee</div>
-            <div class="testimonial">"Fast, efficient, and thorough. Great job!" - Emma Davis</div>
-            <div class="testimonial">"ZenClean exceeded our expectations. Great service!" - David Brown</div>
+    <header>ZenClean - Premium Commercial Cleaning Services</header><section class="services">
+    <h2>Our Services</h2>
+    <div class="service-box">Junk Removal</div>
+    <div class="service-box">Window Cleaning</div>
+    <div class="service-box">Office Cleaning</div>
+</section>
+
+<section class="testimonials">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonials-container">
+        <div class="testimonials-wrapper">
+            <div class="testimonial-box">"ZenClean transformed our office! Highly recommended." - John D.</div>
+            <div class="testimonial-box">"Professional and reliable cleaning service. A+!" - Sarah M.</div>
+            <div class="testimonial-box">"My restaurant has never been cleaner. Thank you ZenClean!" - Mike R.</div>
+            <div class="testimonial-box">"The team did an amazing job with our windows." - Laura T.</div>
+            <div class="testimonial-box">"Great junk removal service! Fast and efficient." - Kevin B.</div>
         </div>
-    </section>
-    
-    <section class="referral">
-        <h2>Referral Program</h2>
-        <div>
-            <p>Refer a business and get a 20% discount on your next cleaning service!</p>
-        </div>
-    </section>
-</div>
+    </div>
+</section>
+
+<section class="referral">
+    <h2>Refer & Earn</h2>
+    <p>Refer a business to ZenClean and get a discount on your next service!</p>
+    <button class="referral-btn">Get Your Referral Code</button>
+</section>
 
 </body>
 </html>
