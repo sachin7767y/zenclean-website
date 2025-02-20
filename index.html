@@ -2,89 +2,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZenClean - Premium Cleaning Services</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <title>ZenClean - Premium Commercial Cleaning</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #111;
-            color: #fff;
-            text-align: center;
-            overflow-x: hidden;
-        }
-        header {
-            background: #222;
-            padding: 20px;
-            font-size: 24px;
-            font-weight: bold;
-        }
-        .services, .testimonials, .referral {
-            padding: 50px 20px;
-        }
-        .service-box, .testimonial-box {
-            background: #333;
-            padding: 20px;
-            margin: 10px auto;
-            width: 80%;
-            max-width: 400px;
-            border-radius: 10px;
-        }
-        .testimonials-container {
-            display: flex;
-            overflow: hidden;
-            width: 100%;
-        }
-        .testimonials-wrapper {
-            display: flex;
-            animation: scroll 10s linear infinite;
-        }
-        @keyframes scroll {
-            from { transform: translateX(100%); }
-            to { transform: translateX(-100%); }
-        }
-        .referral {
-            background: #222;
-            padding: 30px;
-        }
-        .referral-btn {
-            background: #ffcc00;
-            padding: 10px 20px;
-            border: none;
-            color: #111;
-            font-size: 16px;
-            font-weight: bold;
-            cursor: pointer;
-            border-radius: 5px;
-        }
+        body { background: #0F0F0F; color: #FFF; font-family: 'Poppins', sans-serif; }
+        .service-box, .testimonial-box { background: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 10px; }
     </style>
 </head>
-<body>
-    <header>ZenClean - Premium Commercial Cleaning Services</header><section class="services">
-    <h2>Our Services</h2>
-    <div class="service-box">Junk Removal</div>
-    <div class="service-box">Window Cleaning</div>
-    <div class="service-box">Office Cleaning</div>
+<body class="p-6">
+    <header class="text-center text-3xl font-bold py-6">ZenClean - Premium Commercial Cleaning</header><section class="text-center py-8">
+    <h2 class="text-xl mb-4">Our Services</h2>
+    <div class="flex justify-center gap-4">
+        <div class="service-box">Junk Removal</div>
+        <div class="service-box">Window Cleaning</div>
+        <div class="service-box">Office Cleaning</div>
+    </div>
 </section>
 
-<section class="testimonials">
-    <h2>What Our Clients Say</h2>
-    <div class="testimonials-container">
-        <div class="testimonials-wrapper">
-            <div class="testimonial-box">"ZenClean transformed our office! Highly recommended." - John D.</div>
-            <div class="testimonial-box">"Professional and reliable cleaning service. A+!" - Sarah M.</div>
-            <div class="testimonial-box">"My restaurant has never been cleaner. Thank you ZenClean!" - Mike R.</div>
-            <div class="testimonial-box">"The team did an amazing job with our windows." - Laura T.</div>
-            <div class="testimonial-box">"Great junk removal service! Fast and efficient." - Kevin B.</div>
+<section class="py-8 text-center">
+    <h2 class="text-xl mb-4">What Our Clients Say</h2>
+    <div class="overflow-hidden w-full max-w-md mx-auto">
+        <div id="testimonials" class="flex flex-col gap-4">
+            <div class="testimonial-box">"ZenClean transformed our office! Highly recommended." - Alex M.</div>
+            <div class="testimonial-box">"Professional and reliable service!" - Sarah L.</div>
+            <div class="testimonial-box">"Spotless windows, amazing service." - James K.</div>
+            <div class="testimonial-box">"Quick and efficient. Will hire again!" - Emily T.</div>
+            <div class="testimonial-box">"Best cleaning service we’ve ever used." - Michael R.</div>
         </div>
     </div>
 </section>
 
-<section class="referral">
-    <h2>Refer & Earn</h2>
-    <p>Refer a business to ZenClean and get a discount on your next service!</p>
-    <button class="referral-btn">Get Your Referral Code</button>
+<section class="text-center py-8">
+    <h2 class="text-xl mb-4">Referral Program</h2>
+    <p>Refer a business and get a free cleaning session! Contact us to learn more.</p>
 </section>
+
+<script>
+    gsap.to("#testimonials", { y: "-200px", duration: 8, repeat: -1, yoyo: true, ease: "power1.inOut" });
+</script>
 
 </body>
 </html>
+
