@@ -1,96 +1,95 @@
-/* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #000000, #0b3d91);
+    color: white;
     margin: 0;
     padding: 0;
-    background: #f8f9fa;
-    color: #333;
+    text-align: center;
 }
 
-/* Header */
 header {
-    background: #007bff;
-    color: white;
-    padding: 15px 20px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
+    padding: 20px;
+    background: #000000;
 }
 
 .logo {
     height: 50px;
 }
 
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
 nav a {
     color: white;
-    margin: 0 15px;
     text-decoration: none;
+    font-size: 18px;
 }
 
-.pay-bill {
-    background: #ff5733;
+.hero {
+    padding: 100px 20px;
+    background: url('cleaning-hero.jpg') center/cover no-repeat;
+}
+
+.hero h1 {
+    font-size: 50px;
+    text-shadow: 2px 2px black;
+}
+
+.btn {
+    background: #007bff;
+    padding: 10px 20px;
     color: white;
-    padding: 8px 15px;
+    text-decoration: none;
     border-radius: 5px;
-    text-decoration: none;
 }
 
-/* Hero Section */
-.window-hero {
-    background: linear-gradient(to right, #007bff, #0056b3);
-    color: white;
-    text-align: center;
-    padding: 120px 20px 80px;
-}
-
-.cta-button {
-    background: #ff5733;
-    color: white;
-    padding: 12px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    display: inline-block;
-    margin-top: 20px;
-}
-
-/* RPM Process */
-.rpm-process, .who-can-use, .benefits, .contact-form {
-    text-align: center;
-    padding: 50px 20px;
-}
-
-.steps-container {
+.service-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 20px;
     flex-wrap: wrap;
 }
 
-.step {
-    background: white;
+.service {
+    background: #1a1a1a;
     padding: 20px;
-    width: 30%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    border-radius: 5px;
+    width: 300px;
 }
 
-/* Animations */
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+.service img {
+    width: 100%;
+    height: auto;
 }
 
-@keyframes slideUp {
-    from { transform: translateY(20px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
+form {
+    background: #1a1a1a;
+    padding: 20px;
+    max-width: 400px;
+    margin: auto;
+    border-radius: 5px;
 }
 
-@keyframes pop {
-    from { transform: scale(0.8); opacity: 0; }
-    to { transform: scale(1); opacity: 1; }
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
 }
 
 .animate-fade { animation: fadeIn 1s ease-in; }
