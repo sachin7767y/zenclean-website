@@ -1,99 +1,126 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #000000, #0b3d91);
-    color: white;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
 }
 
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
 header {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    background: #000000;
+  background: #333;
+  color: #fff;
+  padding: 10px 0;
 }
 
-.logo {
-    height: 50px;
+header .logo {
+  height: 50px;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+header nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
 }
 
+/* Hero Section */
 .hero {
-    padding: 100px 20px;
-    background: url('cleaning-hero.jpg') center/cover no-repeat;
+  background: url('images/hero-bg.jpg') no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
 }
 
 .hero h1 {
-    font-size: 50px;
-    text-shadow: 2px 2px black;
+  font-size: 3rem;
+  margin-bottom: 10px;
 }
 
-.btn {
-    background: #007bff;
-    padding: 10px 20px;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
 }
 
-.service-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+.cta-button {
+  background: #ff6f61;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
 }
 
-.service {
-    background: #1a1a1a;
-    padding: 20px;
-    border-radius: 5px;
-    width: 300px;
+/* Services Section */
+.services {
+  padding: 50px 0;
+  text-align: center;
 }
 
-.service img {
-    width: 100%;
-    height: auto;
+.services h2 {
+  margin-bottom: 20px;
 }
 
-form {
-    background: #1a1a1a;
-    padding: 20px;
-    max-width: 400px;
-    margin: auto;
-    border-radius: 5px;
+.service-list {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
 }
 
-input, select, button {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
+.service-item {
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 5px;
+  width: 30%;
 }
 
-button {
-    background: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
+/* About Section */
+.about {
+  background: #f4f4f4;
+  padding: 50px 0;
+  text-align: center;
 }
 
-.hidden {
-    display: none;
+/* Contact Section */
+.contact {
+  padding: 50px 0;
+  text-align: center;
 }
 
-.animate-fade { animation: fadeIn 1s ease-in; }
-.animate-slide { animation: slideUp 1s ease-in; }
-.animate-pop { animation: pop 0.5s ease-in-out; }
-.animate-zoom { animation: pop 0.8s ease-in-out; }
-.animate-list li { animation: fadeIn 1s ease-in; }
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact input, .contact textarea, .contact button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact button {
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
