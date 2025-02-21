@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Smooth scrolling
+    // Smooth scrolling for menu links
     document.querySelectorAll("nav a").forEach(anchor => {
         anchor.addEventListener("click", function (event) {
             if (this.hash !== "") {
@@ -11,14 +11,16 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // Testimonials slider effect
-    let index = 0;
-    function showNextTestimonial() {
-        const testimonials = document.querySelectorAll(".testimonial");
-        testimonials.forEach((t, i) => {
-            t.style.transform = translateX(-${index * 100}%);
+    // Simple animation on scroll
+    const animatedElements = document.querySelectorAll(".animate-fade, .animate-slide, .animate-pop, .animate-zoom");
+    function checkScroll() {
+        animatedElements.forEach(el => {
+            if (el.getBoundingClientRect().top < window.innerHeight * 0.8) {
+                el.style.opacity = "1";
+                el.style.transform = "none";
+            }
         });
-        index = (index + 1) % testimonials.length;
     }
-    setInterval(showNextTestimonial, 3000);
+    window.addEventListener("scroll", checkScroll);
+    checkScroll();
 });
