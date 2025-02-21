@@ -1,5 +1,24 @@
 document.addEventListener("DOMContentLoaded", function () {
-    gsap.from(".hero h1", { opacity: 0, y: -50, duration: 1 });
-    gsap.from(".hero p", { opacity: 0, y: -30, duration: 1.2, delay: 0.3 });
-    gsap.from(".btn", { opacity: 0, scale: 0.8, duration: 1.2, delay: 0.6 });
+    // Smooth scrolling
+    document.querySelectorAll("nav a").forEach(anchor => {
+        anchor.addEventListener("click", function (event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                document.querySelector(this.hash).scrollIntoView({
+                    behavior: "smooth"
+                });
+            }
+        });
+    });
+
+    // Testimonials slider effect
+    let index = 0;
+    function showNextTestimonial() {
+        const testimonials = document.querySelectorAll(".testimonial");
+        testimonials.forEach((t, i) => {
+            t.style.transform = translateX(-${index * 100}%);
+        });
+        index = (index + 1) % testimonials.length;
+    }
+    setInterval(showNextTestimonial, 3000);
 });
