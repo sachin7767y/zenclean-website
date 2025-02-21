@@ -1,20 +1,28 @@
+/* General Styles */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background: #f4f4f4;
+    background: #f8f9fa;
     color: #333;
 }
 
+/* Header */
 header {
     background: #007bff;
     color: white;
-    padding: 20px;
-    text-align: center;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
+}
+
+.logo {
+    height: 50px;
 }
 
 nav a {
@@ -23,55 +31,70 @@ nav a {
     text-decoration: none;
 }
 
-.hero {
-    padding: 100px 20px;
-    text-align: center;
+.pay-bill {
+    background: #ff5733;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.window-hero {
     background: linear-gradient(to right, #007bff, #0056b3);
     color: white;
+    text-align: center;
+    padding: 120px 20px 80px;
 }
 
 .cta-button {
-    display: inline-block;
     background: #ff5733;
     color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    margin-top: 20px;
+    padding: 12px 20px;
     border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
 }
 
-.services {
+/* RPM Process */
+.rpm-process, .who-can-use, .benefits, .contact-form {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.steps-container {
     display: flex;
     justify-content: space-around;
-    padding: 50px;
+    flex-wrap: wrap;
 }
 
-.service {
+.step {
     background: white;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
     width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
-.testimonial-slider {
-    display: flex;
-    overflow: hidden;
-    width: 80%;
-    margin: auto;
-    position: relative;
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
-.testimonial {
-    min-width: 100%;
-    text-align: center;
-    padding: 20px;
+@keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
 }
 
-footer {
-    background: #222;
-    color: white;
-    text-align: center;
-    padding: 10px;
+@keyframes pop {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
 }
+
+.animate-fade { animation: fadeIn 1s ease-in; }
+.animate-slide { animation: slideUp 1s ease-in; }
+.animate-pop { animation: pop 0.5s ease-in-out; }
+.animate-zoom { animation: pop 0.8s ease-in-out; }
+.animate-list li { animation: fadeIn 1s ease-in; }
