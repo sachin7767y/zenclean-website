@@ -3,71 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZenClean - Commercial Cleaning Experts</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
+    <title>ZenClean - Professional Cleaning Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
+
     <header>
-        <h1>ZenClean</h1>
+        <img src="logo.png" alt="ZenClean Logo" class="logo">
         <nav>
-            <a href="#home">Home</a>
-            <a href="services/junk-removal.html">Junk Removal</a>
-            <a href="services/window-cleaning.html">Window Cleaning</a>
-            <a href="services/office-cleaning.html">Office Cleaning</a>
-            <a href="testimonials.html">Testimonials</a>
-            <a href="contact.html">Contact</a>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#appointment">Book Now</a></li>
+            </ul>
         </nav>
     </header>
 
-    <section id="home" class="hero">
-        <h2>Professional Cleaning Services</h2>
-        <p>We make your space shine, so you don’t have to!</p>
-        <a href="contact.html" class="cta-button">Get a Free Quote</a>
+    <section class="hero">
+        <h1>Welcome to ZenClean</h1>
+        <p>We make your space shine with professional cleaning services.</p>
+        <a href="#appointment" class="btn">Book an Appointment</a>
     </section>
 
-    <section id="services" class="services">
+    <section id="services">
         <h2>Our Services</h2>
-        <div class="service">
-            <a href="services/junk-removal.html">
-                <h3>Junk Removal</h3>
-                <p>Quick and eco-friendly junk disposal.</p>
-            </a>
-        </div>
-        <div class="service">
-            <a href="services/window-cleaning.html">
+        <div class="service-container">
+            <div class="service">
+                <img src="window-cleaning.jpg" alt="Window Cleaning">
                 <h3>Window Cleaning</h3>
-                <p>Crystal-clear windows for your home or office.</p>
-            </a>
-        </div>
-        <div class="service">
-            <a href="services/office-cleaning.html">
+                <p>Crystal-clear windows for homes and offices.</p>
+            </div>
+            <div class="service">
+                <img src="office-cleaning.jpg" alt="Office Cleaning">
                 <h3>Office Cleaning</h3>
                 <p>Keep your workspace fresh and productive.</p>
-            </a>
+            </div>
+            <div class="service">
+                <img src="junk-removal.jpg" alt="Junk Removal">
+                <h3>Junk Removal</h3>
+                <p>Quick and eco-friendly junk disposal.</p>
+            </div>
         </div>
     </section>
 
-    <section id="testimonials">
-        <h2>What Our Clients Say</h2>
-        <div class="testimonial-slider">
-            <div class="testimonial">
-                <p>"ZenClean transformed my office! Highly recommend!"</p>
-                <h4>- Sarah J.</h4>
-            </div>
-            <div class="testimonial">
-                <p>"Fast and professional junk removal service."</p>
-                <h4>- Mike R.</h4>
-            </div>
-            <div class="testimonial">
-                <p>"Windows never looked better. Excellent work!"</p>
-                <h4>- Linda P.</h4>
-            </div>
-        </div>
+    <section id="appointment">
+        <h2>Book an Appointment</h2>
+        <form id="booking-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="service">Service Needed:</label>
+            <select id="service" required>
+                <option value="Window Cleaning">Window Cleaning</option>
+                <option value="Office Cleaning">Office Cleaning</option>
+                <option value="Junk Removal">Junk Removal</option>
+            </select>
+
+            <label for="date">Preferred Date:</label>
+            <input type="date" id="date" required>
+
+            <button type="submit">Book Now</button>
+        </form>
+        <p id="confirmation" class="hidden">Your appointment has been booked!</p>
     </section>
 
     <footer>
-        <p>&copy; 2024 ZenClean. All rights reserved.</p>
+        <p>© 2025 ZenClean. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
