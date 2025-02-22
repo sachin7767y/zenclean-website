@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Window Cleaning - ZenClean Solutions</title>
+  <title>ZenClean - Professional Cleaning Services</title>
   <link rel="stylesheet" href="style.css"> <!-- Link to CSS file -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"> <!-- Google Fonts -->
 </head>
@@ -16,10 +16,10 @@
       </div>
       <nav>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="index.html#services">Services</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
           <li><a href="about.html">About Us</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="#contact">Contact</a></li>
           <li><a href="#book-now" class="cta-button">Book Now</a></li>
         </ul>
       </nav>
@@ -27,61 +27,74 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="service-hero">
+  <section id="home" class="hero">
     <div class="container">
-      <h1>Window Cleaning</h1>
-      <p>We use industrial-grade chemicals to remove oxidation, lime scale, and atmospheric damage.</p>
-      <a href="#book-now" class="cta-button">Get a Free Estimate</a>
+      <h1>Welcome to ZenClean</h1>
+      <p>We make your space shine with professional cleaning services.</p>
+      <a href="#book-now" class="cta-button">Book an Appointment</a>
     </div>
   </section>
 
-  <!-- How It Works Section -->
-  <section class="how-it-works">
+  <!-- Services Section -->
+  <section id="services" class="services">
     <div class="container">
-      <h2>How Our Window Cleaning Service Works</h2>
-      <div class="steps">
-        <div class="step">
-          <h3>Step 1: Deep Cleaning</h3>
-          <p>We use industrial-grade chemicals to remove oxidation, lime scale, and atmospheric damage.</p>
+      <h2>Our Services</h2>
+      <div class="service-list">
+        <div class="service-item">
+          <a href="window-cleaning.html">
+            <img src="https://via.placeholder.com/300x200.png?text=Window+Cleaning" alt="Window Cleaning"> <!-- Placeholder image -->
+            <h3>Window Cleaning</h3>
+            <p>Crystal-clear windows for homes and offices.</p>
+          </a>
         </div>
-        <div class="step">
-          <h3>Step 2: Bonding Agent</h3>
-          <p>We apply a bonding agent twice a year to fill in micropores and prevent dirt buildup.</p>
+        <div class="service-item">
+          <a href="office-cleaning.html">
+            <img src="https://via.placeholder.com/300x200.png?text=Office+Cleaning" alt="Office Cleaning"> <!-- Placeholder image -->
+            <h3>Office Cleaning</h3>
+            <p>Keep your workspace fresh and productive.</p>
+          </a>
         </div>
-        <div class="step">
-          <h3>Step 3: Maintenance</h3>
-          <p>Regular maintenance ensures your windows stay crystal-clear year-round.</p>
+        <div class="service-item">
+          <a href="junk-removal.html">
+            <img src="https://via.placeholder.com/300x200.png?text=Junk+Removal" alt="Junk Removal"> <!-- Placeholder image -->
+            <h3>Junk Removal</h3>
+            <p>Efficient and eco-friendly junk removal services.</p>
+          </a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Testimonials Section -->
-  <section class="testimonials">
+  <!-- About Section -->
+  <section id="about" class="about">
     <div class="container">
-      <h2>What Our Clients Say</h2>
-      <div class="testimonial-list">
-        <div class="testimonial-item">
-          <p>"ZenClean did an amazing job on our windows! They look brand new. Highly recommend!"</p>
-          <span>- John Doe</span>
-        </div>
-        <div class="testimonial-item">
-          <p>"Professional, efficient, and affordable. Will definitely use them again!"</p>
-          <span>- Jane Smith</span>
-        </div>
-        <div class="testimonial-item">
-          <p>"The best window cleaning service I've ever used. 10/10!"</p>
-          <span>- Mike Johnson</span>
-        </div>
-      </div>
+      <h2>About Us</h2>
+      <p>ZenClean is a trusted cleaning company with over 10 years of experience. We are dedicated to providing top-notch cleaning services tailored to your needs.</p>
+      <a href="about.html" class="cta-button">Learn More</a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form action="#" method="post">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
     <div class="container">
-      <p>&copy; 2023 ZenClean Solutions. All rights reserved.</p>
+      <p>&copy; 2023 ZenClean. All rights reserved.</p>
     </div>
   </footer>
+
+  <!-- Script for Animations -->
+  <script src="script.js"></script>
 </body>
 </html>
