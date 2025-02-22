@@ -6,164 +6,126 @@
   <title>ZenClean Solutions</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    /* Add styling for sections */
-    .service-section {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 50px 0;
-    }
-    .service-text {
-      width: 50%;
-      padding: 20px;
-    }
-    .service-image {
-      width: 50%;
-    }
-    .service-image img {
-      width: 100%;
-      border-radius: 10px;
-    }
-    .reverse {
-      flex-direction: row-reverse;
-    }
-
-    /* Testimonials Section */
-    .testimonials {
-      text-align: center;
-      padding: 50px 0;
-      background: #f4f4f4;
-    }
-    .testimonial-box {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      margin-top: 30px;
-    }
-    .testimonial {
-      width: 30%;
-      padding: 20px;
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    }
-    .testimonial img {
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
-      margin-bottom: 10px;
-    }
-
-    /* Why Choose Us Section */
-    .why-choose-us {
-      text-align: center;
-      padding: 50px;
-      background: #fdd835;
-    }
-    .reasons {
-      display: flex;
-      justify-content: center;
-      gap: 50px;
-      margin-top: 20px;
-    }
-    .reason-item {
-      opacity: 0;
-      transform: translateX(-100px);
-      animation: slideIn 1s forwards;
-    }
-    .reason-item:nth-child(2) { animation-delay: 0.3s; }
-    .reason-item:nth-child(3) { animation-delay: 0.6s; }
-    .reason-item:nth-child(4) { animation-delay: 0.9s; }
-
-    @keyframes slideIn {
-      from { opacity: 0; transform: translateX(-100px); }
-      to { opacity: 1; transform: translateX(0); }
-    }
-  </style>
 </head>
 <body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="logo-container">
+        <img src="https://via.placeholder.com/150x50.png?text=ZenClean+Logo" alt="ZenClean Logo" class="logo">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact" class="cta-button">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Professional Cleaning Services You Can Trust</h1>
+      <p>At ZenClean, we provide top-quality cleaning services, including junk removal, office cleaning, and commercial window cleaning, to ensure a fresh, clean, and safe environment for your business.</p>
+      <a href="#contact" class="cta-button">Get Started</a>
+    </div>
+  </section>
+
+  <!-- 100% Satisfaction Section -->
+  <section id="satisfaction" class="image-text-section">
+    <div class="container">
+      <div class="image-text-content">
+        <div class="image-container">
+          <img src="https://via.placeholder.com/500x400.png?text=Cleaning+Service" alt="Cleaning Service">
+        </div>
+        <div class="text-container">
+          <h2>100% Satisfaction Guaranteed</h2>
+          <p>ZenClean Commercial Cleaning Services provides professional cleaning services you can trust. We use only safe and eco-friendly products that won't harm your employees and clients. We make it our mission to ensure your environment is fresh, clean, and safe.</p>
+          <a href="#contact" class="cta-button">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Office Cleaning (Image Right, Text Left) -->
-  <section class="service-section">
-    <div class="service-text">
-      <h2>Office Cleaning</h2>
-      <p>We provide top-quality office cleaning services to maintain a clean and hygienic work environment for your employees and clients.</p>
-      <a href="#contact" class="cta-button">Get a Free Estimate</a>
-    </div>
-    <div class="service-image">
-      <img src="https://via.placeholder.com/500x300.png?text=Office+Cleaning" alt="Office Cleaning">
+  <section class="image-text-section">
+    <div class="container">
+      <div class="image-text-content">
+        <div class="text-container">
+          <h2>Office Cleaning</h2>
+          <p>Maintain a spotless work environment with our professional office cleaning services. We ensure your office remains fresh, sanitized, and inviting for employees and clients.</p>
+          <a href="#contact" class="cta-button">Get Your Free Estimate</a>
+        </div>
+        <div class="image-container">
+          <img src="https://via.placeholder.com/500x400.png?text=Office+Cleaning" alt="Office Cleaning">
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Junk Removal (Image Left, Text Right) -->
-  <section class="service-section reverse">
-    <div class="service-text">
-      <h2>Junk Removal</h2>
-      <p>We remove all unwanted junk and waste efficiently, leaving your space clutter-free and clean.</p>
-      <a href="#contact" class="cta-button">Get a Free Estimate</a>
-    </div>
-    <div class="service-image">
-      <img src="https://via.placeholder.com/500x300.png?text=Junk+Removal" alt="Junk Removal">
+  <section class="image-text-section">
+    <div class="container">
+      <div class="image-text-content reverse">
+        <div class="image-container">
+          <img src="https://via.placeholder.com/500x400.png?text=Junk+Removal" alt="Junk Removal">
+        </div>
+        <div class="text-container">
+          <h2>Junk Removal</h2>
+          <p>Say goodbye to unwanted clutter! Our junk removal services ensure a hassle-free way to clear out your space efficiently and responsibly.</p>
+          <a href="#contact" class="cta-button">Get Your Free Estimate</a>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Window Cleaning (Image Right, Text Left) -->
-  <section class="service-section">
-    <div class="service-text">
-      <h2>Window Cleaning</h2>
-      <p>We offer professional window cleaning services to ensure streak-free, spotless windows that enhance your building’s appearance.</p>
-      <a href="#contact" class="cta-button">Get a Free Estimate</a>
-    </div>
-    <div class="service-image">
-      <img src="https://via.placeholder.com/500x300.png?text=Window+Cleaning" alt="Window Cleaning">
-    </div>
-  </section>
-
-  <!-- Testimonials Section -->
-  <section class="testimonials">
-    <h2>What Our Clients Say</h2>
-    <div class="testimonial-box">
-      <div class="testimonial">
-        <img src="https://via.placeholder.com/80.png?text=User+1" alt="Client 1">
-        <p>"ZenClean did an amazing job! Our office has never looked better. Highly recommended!"</p>
-        <strong>- Sarah M.</strong>
-      </div>
-      <div class="testimonial">
-        <img src="https://via.placeholder.com/80.png?text=User+2" alt="Client 2">
-        <p>"The junk removal service was quick and efficient. Excellent customer service!"</p>
-        <strong>- David L.</strong>
-      </div>
-      <div class="testimonial">
-        <img src="https://via.placeholder.com/80.png?text=User+3" alt="Client 3">
-        <p>"Professional window cleaning with attention to detail. Will hire again!"</p>
-        <strong>- Emma R.</strong>
+  <section class="image-text-section">
+    <div class="container">
+      <div class="image-text-content">
+        <div class="text-container">
+          <h2>Commercial Window Cleaning</h2>
+          <p>Brighten up your business with crystal-clear windows. Our commercial window cleaning services leave your windows spotless, streak-free, and looking their best.</p>
+          <a href="#contact" class="cta-button">Get Your Free Estimate</a>
+        </div>
+        <div class="image-container">
+          <img src="https://via.placeholder.com/500x400.png?text=Window+Cleaning" alt="Window Cleaning">
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Why Choose Us Section -->
-  <section class="why-choose-us">
-    <h2>Why Choose Us?</h2>
-    <div class="reasons">
-      <div class="reason-item">
-        <h3>15+ Years in the Industry</h3>
-        <p>We bring over 15 years of experience to ensure top-quality service.</p>
-      </div>
-      <div class="reason-item">
-        <h3>Family-Run Business</h3>
-        <p>We treat every client like family, offering personalized service.</p>
-      </div>
-      <div class="reason-item">
-        <h3>Quick Service Response</h3>
-        <p>We prioritize fast and efficient service to meet your needs.</p>
-      </div>
-      <div class="reason-item">
-        <h3>Trustworthy & Professional</h3>
-        <p>Our team is reliable, professional, and dedicated to your satisfaction.</p>
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>We customize our quotes based on an onsite visit and assessment. To begin your custom quote, contact us using the form below.</p>
+      <div class="contact-content">
+        <form>
+          <input type="text" placeholder="First & Last Name" required>
+          <input type="email" placeholder="Enter Your Email" required>
+          <input type="text" placeholder="Building Location (City, State)" required>
+          <select required>
+            <option value="" disabled selected>Select a Service</option>
+            <option value="junk-removal">Junk Removal</option>
+            <option value="office-cleaning">Office Cleaning</option>
+            <option value="window-cleaning">Commercial Window Cleaning</option>
+          </select>
+          <button type="submit">Submit</button>
+        </form>
       </div>
     </div>
   </section>
 
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 ZenClean Solutions. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
