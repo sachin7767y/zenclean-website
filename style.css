@@ -94,11 +94,13 @@ header nav ul li a.cta-button:hover {
   font-size: 3.5rem;
   margin-bottom: 10px;
   font-weight: 700;
+  animation: fadeIn 1s ease-in-out;
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 30px;
+  animation: fadeIn 1.5s ease-in-out;
 }
 
 .hero .cta-button {
@@ -109,56 +111,110 @@ header nav ul li a.cta-button:hover {
   border-radius: 5px;
   font-weight: 600;
   transition: background 0.3s ease;
+  animation: fadeIn 2s ease-in-out;
 }
 
 .hero .cta-button:hover {
   background: #e6b800; /* Darker gold */
 }
 
-/* Services Section */
-.services {
+/* Image Left - Text Right Section */
+.image-text-section {
   padding: 80px 0;
-  text-align: center;
   background: #f4f4f4; /* Light gray background */
 }
 
-.services h2 {
-  font-size: 2.5rem;
-  margin-bottom: 40px;
-  color: #2E8B57; /* Green */
+.image-text-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 
-.service-list {
+.image-container {
+  flex: 1;
+  animation: slideInLeft 1s ease-in-out;
+}
+
+.image-container img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.text-container {
+  flex: 1;
+  animation: slideInRight 1s ease-in-out;
+}
+
+.text-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.text-container p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.text-container .cta-button {
+  background: #2E8B57; /* Green */
+  color: #fff;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.text-container .cta-button:hover {
+  background: #1f5a3d; /* Darker green */
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+  background: #87CEEB; /* Sky blue background */
+  padding: 80px 0;
+  text-align: center;
+}
+
+.why-choose-us h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #333;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.reasons {
   display: flex;
   gap: 20px;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.service-item {
+.reason-item {
   background: #fff;
   padding: 20px;
   border-radius: 10px;
-  width: 30%;
+  width: 22%;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+  animation: slideInLeft 1s ease-in-out;
 }
 
-.service-item:hover {
+.reason-item:hover {
   transform: translateY(-10px);
 }
 
-.service-image img {
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
+.reason-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #2E8B57; /* Green */
 }
 
-.service-item h3 {
-  font-size: 1.5rem;
-  margin-top: 15px;
-  color: #2E8B57; /* Green */
+.reason-item p {
+  font-size: 1rem;
+  color: #666;
 }
 
 /* Contact Form Section */
@@ -171,11 +227,13 @@ header nav ul li a.cta-button:hover {
   font-size: 2.5rem;
   margin-bottom: 20px;
   color: #2E8B57; /* Green */
+  animation: fadeIn 1s ease-in-out;
 }
 
 .contact p {
   font-size: 1.2rem;
   margin-bottom: 30px;
+  animation: fadeIn 1.5s ease-in-out;
 }
 
 .contact-content {
@@ -189,6 +247,7 @@ header nav ul li a.cta-button:hover {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  animation: slideInLeft 1s ease-in-out;
 }
 
 .contact input, .contact select, .contact button {
@@ -211,6 +270,7 @@ header nav ul li a.cta-button:hover {
 
 .map-container {
   flex: 1;
+  animation: slideInRight 1s ease-in-out;
 }
 
 .map-container img {
@@ -229,4 +289,20 @@ footer {
 footer p {
   margin: 0;
   font-size: 1rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideInLeft {
+  from { transform: translateX(-100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideInRight {
+  from { transform: translateX(100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
 }
