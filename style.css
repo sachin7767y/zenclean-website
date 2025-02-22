@@ -16,7 +16,7 @@ body {
 
 /* Header */
 header {
-  background: #2E8B57;
+  background: #2E8B57; /* Green background */
   color: #fff;
   padding: 20px 0;
   position: sticky;
@@ -51,11 +51,11 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-  color: #FFD700;
+  color: #FFD700; /* Gold on hover */
 }
 
 header nav ul li a.cta-button {
-  background: #FFD700;
+  background: #FFD700; /* Gold */
   color: #333;
   padding: 10px 20px;
   border-radius: 5px;
@@ -63,7 +63,7 @@ header nav ul li a.cta-button {
 }
 
 header nav ul li a.cta-button:hover {
-  background: #e6b800;
+  background: #e6b800; /* Darker gold */
 }
 
 /* Hero Section */
@@ -102,7 +102,7 @@ header nav ul li a.cta-button:hover {
 }
 
 .hero .cta-button {
-  background: #FFD700;
+  background: #FFD700; /* Gold */
   color: #333;
   padding: 15px 30px;
   text-decoration: none;
@@ -112,20 +112,20 @@ header nav ul li a.cta-button:hover {
 }
 
 .hero .cta-button:hover {
-  background: #e6b800;
+  background: #e6b800; /* Darker gold */
 }
 
 /* Services Section */
 .services {
   padding: 80px 0;
   text-align: center;
-  background: #f4f4f4;
+  background: #f4f4f4; /* Light gray background */
 }
 
 .services h2 {
   font-size: 2.5rem;
   margin-bottom: 40px;
-  color: #2E8B57;
+  color: #2E8B57; /* Green */
 }
 
 .service-list {
@@ -139,7 +139,7 @@ header nav ul li a.cta-button:hover {
   background: #fff;
   padding: 20px;
   border-radius: 10px;
-  width: 22%;
+  width: 30%;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
@@ -158,107 +158,19 @@ header nav ul li a.cta-button:hover {
 .service-item h3 {
   font-size: 1.5rem;
   margin-top: 15px;
-  color: #2E8B57;
-}
-
-/* Why Choose Us Section */
-.why-choose-us {
-  background: #87CEEB; /* Sky blue background */
-  padding: 80px 0;
-  text-align: center;
-}
-
-.why-choose-us h2 {
-  font-size: 2.5rem;
-  margin-bottom: 40px;
-  color: #333;
-}
-
-.reasons {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.reason-item {
-  background: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  width: 22%;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-
-.reason-item:hover {
-  transform: translateY(-10px);
-}
-
-.reason-item h3 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  color: #2E8B57;
-}
-
-.reason-item p {
-  font-size: 1rem;
-  color: #666;
-}
-
-/* Testimonials Section */
-.testimonials {
-  padding: 80px 0;
-  text-align: center;
-}
-
-.testimonials h2 {
-  font-size: 2.5rem;
-  margin-bottom: 40px;
-  color: #2E8B57;
-}
-
-.testimonial-list {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.testimonial-item {
-  background: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  width: 45%;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-
-.testimonial-item:hover {
-  transform: translateY(-10px);
-}
-
-.testimonial-item p {
-  font-size: 1.2rem;
-  color: #666;
-}
-
-.testimonial-item h4 {
-  font-size: 1.2rem;
-  margin-top: 15px;
-  color: #2E8B57;
+  color: #2E8B57; /* Green */
 }
 
 /* Contact Form Section */
 .contact {
   padding: 80px 0;
   text-align: center;
-  background: #f4f4f4;
 }
 
 .contact h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  color: #2E8B57;
+  color: #2E8B57; /* Green */
 }
 
 .contact p {
@@ -266,12 +178,17 @@ header nav ul li a.cta-button:hover {
   margin-bottom: 30px;
 }
 
+.contact-content {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
 .contact form {
+  flex: 1;
   display: flex;
   flex-direction: column;
   gap: 15px;
-  max-width: 500px;
-  margin: 0 auto;
 }
 
 .contact input, .contact select, .contact button {
@@ -281,7 +198,7 @@ header nav ul li a.cta-button:hover {
 }
 
 .contact button {
-  background: #2E8B57;
+  background: #2E8B57; /* Green */
   color: #fff;
   font-weight: 600;
   cursor: pointer;
@@ -289,12 +206,21 @@ header nav ul li a.cta-button:hover {
 }
 
 .contact button:hover {
-  background: #1f5a3d;
+  background: #1f5a3d; /* Darker green */
+}
+
+.map-container {
+  flex: 1;
+}
+
+.map-container img {
+  width: 100%;
+  border-radius: 10px;
 }
 
 /* Footer */
 footer {
-  background: #2E8B57;
+  background: #2E8B57; /* Green background */
   color: #fff;
   text-align: center;
   padding: 20px 0;
@@ -303,14 +229,4 @@ footer {
 footer p {
   margin: 0;
   font-size: 1rem;
-}
-
-/* Animations */
-@keyframes slideInLeft {
-  from { transform: translateX(-100%); opacity: 0; }
-  to { transform: translateX(0); opacity: 1; }
-}
-
-.why-choose-us .reason-item {
-  animation: slideInLeft 0.5s ease-in-out;
 }
