@@ -164,6 +164,17 @@ header nav ul li a.cta-button:hover {
   color: #666;
 }
 
+/* Remove default link styling */
+.service-item a {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit the text color from the parent */
+}
+
+/* Add hover effect for service items */
+.service-item a:hover {
+  color: #FF6F61; /* Coral color on hover */
+}
+
 /* About Section */
 .about {
   padding: 80px 0;
