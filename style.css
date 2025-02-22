@@ -115,48 +115,156 @@ header nav ul li a.cta-button:hover {
   background: #e6b800; /* Darker gold */
 }
 
-/* Features Section */
-.features {
+/* Why Choose Us Section */
+.why-choose-us {
+  background: #f4f4f4; /* Light gray background */
   padding: 80px 0;
   text-align: center;
-  background: #f4f4f4; /* Light gray background */
 }
 
-.features h2 {
-  margin-bottom: 40px;
+.why-choose-us h2 {
   font-size: 2.5rem;
+  margin-bottom: 40px;
   color: #2E8B57; /* Green */
 }
 
-.feature-list {
+.reasons {
   display: flex;
   gap: 20px;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.feature-item {
+.reason-item {
   background: #fff; /* White background */
   padding: 20px;
   border-radius: 10px;
-  width: 30%;
+  width: 22%;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
 
-.feature-item:hover {
+.reason-item:hover {
   transform: translateY(-10px);
 }
 
-.feature-item h3 {
+.reason-item h3 {
   font-size: 1.5rem;
   margin-bottom: 10px;
   color: #2E8B57; /* Green */
 }
 
-.feature-item p {
+.reason-item p {
   font-size: 1rem;
   color: #666;
+}
+
+/* Satisfaction Guaranteed Section */
+.satisfaction-guaranteed {
+  background: #2E8B57; /* Green background */
+  color: #fff;
+  text-align: center;
+  padding: 80px 0;
+}
+
+.satisfaction-guaranteed h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.satisfaction-guaranteed p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.satisfaction-guaranteed .cta-button {
+  background: #FFD700; /* Gold */
+  color: #333;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.satisfaction-guaranteed .cta-button:hover {
+  background: #e6b800; /* Darker gold */
+}
+
+/* Contact Us Section */
+.contact-us {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.contact-us h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #2E8B57; /* Green */
+}
+
+.contact-us p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.contact-us form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact-us input, .contact-us select, .contact-us button {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.contact-us button {
+  background: #2E8B57; /* Green */
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-us button:hover {
+  background: #1f5a3d; /* Darker green */
+}
+
+/* Industries We Serve Section */
+.industries {
+  background: #f4f4f4; /* Light gray background */
+  padding: 80px 0;
+  text-align: center;
+}
+
+.industries h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #2E8B57; /* Green */
+}
+
+.industry-list {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.industry-item {
+  background: #fff; /* White background */
+  padding: 20px;
+  border-radius: 10px;
+  width: 18%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.industry-item:hover {
+  transform: translateY(-10px);
 }
 
 /* Footer */
@@ -165,6 +273,11 @@ footer {
   color: #fff;
   text-align: center;
   padding: 20px 0;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1rem;
 }
 
 /* Animations */
@@ -182,6 +295,6 @@ footer {
   animation: fadeIn 1s ease-in-out;
 }
 
-.feature-item {
+.reason-item, .industry-item {
   animation: slideUp 0.5s ease-in-out;
 }
