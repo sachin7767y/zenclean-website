@@ -1,111 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ZenClean Solutions</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Page</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1, h2, h3 {
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Service Section Styles */
+        .service {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .service img {
+            width: 45%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .service .text {
+            width: 50%;
+            padding: 20px;
+        }
+
+        .service .text h2 {
+            margin-top: 0;
+        }
+
+        .service .text p {
+            line-height: 1.6;
+        }
+
+        .service .text a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .service .text a:hover {
+            background-color: #0056b3;
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            margin-top: 40px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .testimonials h2 {
+            margin-top: 0;
+        }
+
+        .testimonials p {
+            font-style: italic;
+            color: #555;
+        }
+
+        /* Satisfaction Section */
+        .satisfaction {
+            margin-top: 40px;
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .satisfaction h2 {
+            margin-top: 0;
+        }
+
+        .satisfaction p {
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        /* Contact Form Section */
+        .contact-form {
+            margin-top: 40px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form h2 {
+            margin-top: 0;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Google Map Section */
+        .map {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .map h2 {
+            margin-bottom: 20px;
+        }
+
+        .map iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
-  <!-- Header -->
-  <header>
     <div class="container">
-      <div class="logo-container">
-        <img src="https://via.placeholder.com/150x50.png?text=ZenClean+Logo" alt="ZenClean Logo" class="logo">
-      </div>
-      <nav>
-        <ul>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#contact" class="cta-button">Contact Us</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+        <!-- Service 1 -->
+        <div class="service">
+            <div class="text">
+                <h2>Office Cleaning</h2>
+                <p>We provide top-notch office cleaning services to ensure a clean and productive work environment.</p>
+                <a href="office-cleaning.html">Learn More</a>
+            </div>
+            <img src="office-cleaning.jpg" alt="Office Cleaning">
+        </div>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="container">
-      <h1>Professional Cleaning Services You Can Trust</h1>
-      <p>At ZenClean, we provide top-quality cleaning services, including junk removal, office cleaning, and commercial window cleaning, to ensure a fresh, clean, and safe environment for your business.</p>
-      <a href="#contact" class="cta-button">Get Started</a>
-    </div>
-  </section>
+        <!-- Service 2 -->
+        <div class="service">
+            <img src="medical-cleaning.jpg" alt="Medical Cleaning">
+            <div class="text">
+                <h2>Medical Facility Cleaning</h2>
+                <p>Our specialized cleaning services for medical facilities ensure a sterile and safe environment.</p>
+                <a href="medical-cleaning.html">Learn More</a>
+            </div>
+        </div>
 
-  <!-- Image Left - Text Right Section -->
-  <section id="image-text-section" class="image-text-section">
-    <div class="container">
-      <div class="image-text-content">
-        <div class="image-container">
-          <img src="https://via.placeholder.com/500x400.png?text=Cleaning+Service" alt="Cleaning Service">
+        <!-- Service 3 -->
+        <div class="service">
+            <div class="text">
+                <h2>Shopping Center Cleaning</h2>
+                <p>We offer comprehensive cleaning solutions for shopping centers to maintain a pleasant shopping experience.</p>
+                <a href="shopping-center-cleaning.html">Learn More</a>
+            </div>
+            <img src="shopping-center-cleaning.jpg" alt="Shopping Center Cleaning">
         </div>
-        <div class="text-container">
-          <h2>100% Satisfaction Guaranteed</h2>
-          <p>ZenClean Commercial Cleaning Services provides professional cleaning services you can trust. We use only safe and eco-friendly products that won't harm your employees and clients. We make it our mission to ensure your environment is fresh, clean, and safe.</p>
-          <a href="#contact" class="cta-button">Learn More</a>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Why Choose Us Section -->
-  <section id="why-choose-us" class="why-choose-us">
-    <div class="container">
-      <h2>Why Choose Us?</h2>
-      <div class="reasons">
-        <div class="reason-item">
-          <h3>15+ Years in the Industry</h3>
-          <p>We bring over 15 years of experience to ensure top-quality service.</p>
+        <!-- Testimonials Section -->
+        <div class="testimonials">
+            <h2>Testimonials</h2>
+            <p>"Great service! Our office has never been cleaner." - Happy Client</p>
+            <p>"Professional and reliable. Highly recommend!" - Another Client</p>
         </div>
-        <div class="reason-item">
-          <h3>Family-Run Business</h3>
-          <p>We treat every client like family, offering personalized service.</p>
-        </div>
-        <div class="reason-item">
-          <h3>Quick Service Response</h3>
-          <p>We prioritize fast and efficient service to meet your needs.</p>
-        </div>
-        <div class="reason-item">
-          <h3>Trustworthy & Professional</h3>
-          <p>Our team is reliable, professional, and dedicated to your satisfaction.</p>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Contact Form Section -->
-  <section id="contact" class="contact">
-    <div class="container">
-      <h2>Contact Us</h2>
-      <p>We customize our quotes based on an onsite visit and assessment. To begin your custom quote, contact us using the form below.</p>
-      <div class="contact-content">
-        <form>
-          <input type="text" placeholder="First & Last Name" required>
-          <input type="email" placeholder="Enter Your Email" required>
-          <input type="text" placeholder="Building Location (City, State)" required>
-          <select required>
-            <option value="" disabled selected>Select a Service</option>
-            <option value="junk-removal">Junk Removal</option>
-            <option value="office-cleaning">Office Cleaning</option>
-            <option value="window-cleaning">Commercial Window Cleaning</option>
-          </select>
-          <button type="submit">Submit</button>
-        </form>
-        <div class="map-container">
-          <img src="https://via.placeholder.com/600x400.png?text=USA+Map" alt="USA Map">
+        <!-- Satisfaction Section -->
+        <div class="satisfaction">
+            <h2>100% Satisfaction Guarantee</h2>
+            <p>We are committed to providing the best service and ensuring 100% customer satisfaction.</p>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2023 ZenClean Solutions. All rights reserved.</p>
-    </div>
-  </footer>
+        <!-- Contact Form Section -->
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
 
-  <script src="script.js"></script>
+        <!-- Google Map Section -->
+        <div class="map">
+            <h2>Our Location</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.8354345093747!2d144.9537353153166!3d-37.816279742021665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577d44e7c1f4e4a!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2sus!4v1625070000000!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
 </body>
 </html>
