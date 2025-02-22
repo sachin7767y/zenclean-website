@@ -1,89 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Service Page</title>
-    <style>
-        /* General Styles */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
-        }
-
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        h2 {
-            color: #333;
-            margin-top: 0;
-        }
-
-        p {
-            line-height: 1.6;
-            color: #555;
-        }
-
-        a {
-            text-decoration: none;
-            color: #fff;
-        }
-
-        /* Service Section Styles */
-        .service {
-            background-color: #fff;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .service h2 {
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-
-        .service p {
-            font-size: 16px;
-            margin-bottom: 20px;
-        }
-
-        .service a {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #007BFF;
-            border-radius: 5px;
-            text-align: center;
-            transition: background-color 0.3s ease;
-        }
-
-        .service a:hover {
-            background-color: #0056b3;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZenClean Solutions</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- Header -->
+  <header>
     <div class="container">
-        <!-- Office Cleaning Service -->
-        <div class="service">
-            <h2>Office Cleaning</h2>
-            <p>We provide top-notch office cleaning services to ensure a clean and productive work environment.</p>
-            <a href="office-cleaning.html">Learn More</a>
-        </div>
-
-        <!-- Medical Facility Cleaning Service -->
-        <div class="service">
-            <h2>Medical Facility Cleaning</h2>
-            <p>Our specialized cleaning services for medical facilities ensure a sterile and safe environment.</p>
-            <a href="medical-cleaning.html">Learn More</a>
-        </div>
+      <div class="logo-container">
+        <img src="https://via.placeholder.com/150x50.png?text=ZenClean+Logo" alt="ZenClean Logo" class="logo">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact" class="cta-button">Contact Us</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Professional Cleaning Services You Can Trust</h1>
+      <p>At ZenClean, we provide top-quality cleaning services, including junk removal, office cleaning, and commercial window cleaning, to ensure a fresh, clean, and safe environment for your business.</p>
+      <a href="#contact" class="cta-button">Get Started</a>
+    </div>
+  </section>
+
+  <!-- Image Left - Text Right Section -->
+  <section id="image-text-section" class="image-text-section">
+    <div class="container">
+      <div class="image-text-content">
+        <div class="image-container">
+          <img src="https://via.placeholder.com/500x400.png?text=Cleaning+Service" alt="Cleaning Service">
+        </div>
+        <div class="text-container">
+          <h2>100% Satisfaction Guaranteed</h2>
+          <p>ZenClean Commercial Cleaning Services provides professional cleaning services you can trust. We use only safe and eco-friendly products that won't harm your employees and clients. We make it our mission to ensure your environment is fresh, clean, and safe.</p>
+          <a href="#contact" class="cta-button">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us Section -->
+  <section id="why-choose-us" class="why-choose-us">
+    <div class="container">
+      <h2>Why Choose Us?</h2>
+      <div class="reasons">
+        <div class="reason-item">
+          <h3>15+ Years in the Industry</h3>
+          <p>We bring over 15 years of experience to ensure top-quality service.</p>
+        </div>
+        <div class="reason-item">
+          <h3>Family-Run Business</h3>
+          <p>We treat every client like family, offering personalized service.</p>
+        </div>
+        <div class="reason-item">
+          <h3>Quick Service Response</h3>
+          <p>We prioritize fast and efficient service to meet your needs.</p>
+        </div>
+        <div class="reason-item">
+          <h3>Trustworthy & Professional</h3>
+          <p>Our team is reliable, professional, and dedicated to your satisfaction.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>We customize our quotes based on an onsite visit and assessment. To begin your custom quote, contact us using the form below.</p>
+      <div class="contact-content">
+        <form>
+          <input type="text" placeholder="First & Last Name" required>
+          <input type="email" placeholder="Enter Your Email" required>
+          <input type="text" placeholder="Building Location (City, State)" required>
+          <select required>
+            <option value="" disabled selected>Select a Service</option>
+            <option value="junk-removal">Junk Removal</option>
+            <option value="office-cleaning">Office Cleaning</option>
+            <option value="window-cleaning">Commercial Window Cleaning</option>
+          </select>
+          <button type="submit">Submit</button>
+        </form>
+        <div class="map-container">
+          <img src="https://via.placeholder.com/600x400.png?text=USA+Map" alt="USA Map">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 ZenClean Solutions. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
