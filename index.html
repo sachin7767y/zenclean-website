@@ -1,83 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Zenclean post-construction cleaning services">
-    <meta name="keywords" content="post-construction cleaning, air quality testing, drone inspection">
-    <meta name="author" content="Zenclean">
-    <title>Zenclean - Professional Post-Construction Cleaning</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZenClean Solutions - Professional Post-Construction Cleaning</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    .hero-bg {
+      background: linear-gradient(90deg, #1E3A8A 0%, #2A4365 100%);
+    }
+    .service-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
 </head>
-<body>
-    <!-- Header Section -->
-    <header style="background-color: #0a74da; color: white; padding: 20px;">
-        <div class="container">
-            <h1 style="font-family: 'Poppins', sans-serif; font-size: 36px; text-align: center;">Zenclean</h1>
-            <p style="font-family: 'Poppins', sans-serif; font-size: 20px; text-align: center;">Your trusted post-construction cleaning partner</p>
-        </div>
-    </header>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Hero Section -->
+  <header class="relative h-screen flex items-center justify-center hero-bg text-white overflow-hidden">
+    <div class="absolute inset-0">
+      <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&q=80&w=1920" alt="Construction site" class="w-full h-full object-cover opacity-20">
+    </div>
+    <div class="relative z-10 text-center px-4 max-w-5xl mx-auto">
+      <h1 class="text-5xl md:text-6xl font-bold mb-4">ZenClean Solutions</h1>
+      <p class="text-xl md:text-2xl mb-6">Transforming Construction Sites into Pristine Spaces</p>
+      <a href="#contact" class="inline-flex items-center bg-gold-500 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-gold-600 transition-colors">
+        Request a Quote
+      </a>
+    </div>
+  </header>
 
-    <!-- Main Content Section -->
-    <section id="main-content" style="padding: 40px 20px;">
-        <div class="container">
-            <h2 style="font-family: 'Poppins', sans-serif; font-size: 28px; text-align: center; margin-bottom: 20px;">Our Services</h2>
-            <div class="services" style="display: flex; justify-content: space-around; flex-wrap: wrap;">
-                <div class="service-box" style="background-color: #f4f4f4; width: 30%; padding: 20px; text-align: center; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-                    <img src="https://via.placeholder.com/150" alt="Drone Inspection" style="width: 100px; height: 100px; object-fit: cover; border-radius: 50%;">
-                    <h3 style="font-family: 'Poppins', sans-serif; font-size: 22px; margin-top: 10px;">Drone Inspection</h3>
-                    <p style="font-family: 'Poppins', sans-serif; font-size: 16px; color: #666;">Get aerial insights of the construction site for detailed cleaning analysis.</p>
-                </div>
-                <div class="service-box" style="background-color: #f4f4f4; width: 30%; padding: 20px; text-align: center; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-                    <img src="https://via.placeholder.com/150" alt="Air Quality Testing" style="width: 100px; height: 100px; object-fit: cover; border-radius: 50%;">
-                    <h3 style="font-family: 'Poppins', sans-serif; font-size: 22px; margin-top: 10px;">Air Quality Testing</h3>
-                    <p style="font-family: 'Poppins', sans-serif; font-size: 16px; color: #666;">We ensure the air quality is safe post-cleaning with smart sensors.</p>
-                </div>
-                <div class="service-box" style="background-color: #f4f4f4; width: 30%; padding: 20px; text-align: center; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-                    <img src="https://via.placeholder.com/150" alt="Cleaning Services" style="width: 100px; height: 100px; object-fit: cover; border-radius: 50%;">
-                    <h3 style="font-family: 'Poppins', sans-serif; font-size: 22px; margin-top: 10px;">Post-Construction Cleaning</h3>
-                    <p style="font-family: 'Poppins', sans-serif; font-size: 16px; color: #666;">Comprehensive cleaning for newly constructed spaces.</p>
-                </div>
-            </div>
+  <!-- Services Section -->
+  <section class="py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-navy-900">Our Specialized Services</h2>
+      <p class="text-lg text-gray-600 text-center mb-12 max-w-3xl mx-auto">ZenClean delivers precision post-construction cleaning with advanced techniques, tailored to the unique challenges of residential, commercial, and industrial projects.</p>
+      <div class="grid md:grid-cols-3 gap-8" id="services">
+        <div class="service-card bg-white p-6 rounded-lg shadow-md text-center fade-in" style="transition-delay: 0s;">
+          <svg class="w-12 h-12 text-gold-500 mx-auto mb-4" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
+          <h3 class="text-xl font-semibold mb-2">HEPA Dust Extraction</h3>
+          <p class="text-gray-600">Utilizes high-efficiency HEPA filtration to remove microscopic construction dust, ensuring pristine air quality and surface cleanliness.</p>
         </div>
-    </section>
-
-    <!-- Contact Us Section -->
-    <section id="contact-us" style="background-color: #e1e1e1; padding: 40px 20px;">
-        <div class="container">
-            <h2 style="font-family: 'Poppins', sans-serif; font-size: 28px; text-align: center; margin-bottom: 20px;">Get In Touch</h2>
-            <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
-                <div style="width: 45%; padding: 20px; background-color: white; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-                    <h3 style="font-family: 'Poppins', sans-serif; font-size: 22px; margin-bottom: 10px;">Contact Form</h3>
-                    <form action="#" method="POST">
-                        <div style="margin-bottom: 15px;">
-                            <input type="text" name="name" placeholder="Your Name" style="width: 100%; padding: 10px; font-family: 'Poppins', sans-serif; font-size: 16px; border: 1px solid #ccc; border-radius: 5px;">
-                        </div>
-                        <div style="margin-bottom: 15px;">
-                            <input type="email" name="email" placeholder="Your Email" style="width: 100%; padding: 10px; font-family: 'Poppins', sans-serif; font-size: 16px; border: 1px solid #ccc; border-radius: 5px;">
-                        </div>
-                        <div style="margin-bottom: 15px;">
-                            <textarea name="message" placeholder="Your Message" rows="4" style="width: 100%; padding: 10px; font-family: 'Poppins', sans-serif; font-size: 16px; border: 1px solid #ccc; border-radius: 5px;"></textarea>
-                        </div>
-                        <button type="submit" style="background-color: #0a74da; color: white; padding: 10px 20px; border: none; font-family: 'Poppins', sans-serif; font-size: 16px; border-radius: 5px; cursor: pointer;">Send Message</button>
-                    </form>
-                </div>
-                <div style="width: 45%; padding: 20px; background-color: white; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-                    <h3 style="font-family: 'Poppins', sans-serif; font-size: 22px; margin-bottom: 10px;">Our Location</h3>
-                    <p style="font-family: 'Poppins', sans-serif; font-size: 16px; color: #666;">123 Clean Street, City, Country</p>
-                    <div style="margin-top: 20px;">
-                        <img src="https://via.placeholder.com/300x200" alt="Map" style="width: 100%; height: auto; border-radius: 8px;">
-                    </div>
-                </div>
-            </div>
+        <div class="service-card bg-white p-6 rounded-lg shadow-md text-center fade-in" style="transition-delay: 0.2s;">
+          <svg class="w-12 h-12 text-gold-500 mx-auto mb-4" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V6h16v12zM6 10h12v2H6zm0 4h8v2H6z"/></svg>
+          <h3 class="text-xl font-semibold mb-2">Sustainable Debris Management</h3>
+          <p class="text-gray-600">Eco-friendly disposal of construction waste, with recycling options to minimize environmental impact.</p>
         </div>
-    </section>
+        <div class="service-card bg-white p-6 rounded-lg shadow-md text-center fade-in" style="transition-delay: 0.4s;">
+          <svg class="w-12 h-12 text-gold-500 mx-auto mb-4" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
+          <h3 class="text-xl font-semibold mb-2">Post-Clean Validation</h3>
+          <p class="text-gray-600">Detailed inspections and air quality testing with certified tools to confirm a move-in-ready environment.</p>
+        </div>
+      </div>
+      <!-- Pricing Section -->
+      <div class="mt-16 bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-2xl font-bold text-navy-900 mb-4">Transparent Pricing</h3>
+        <p class="text-gray-600 mb-6">At ZenClean, we provide personalized quotes tailored to your project’s scope, size, and specific requirements. Every quote is crafted with precision, reflecting your unique needs—whether it’s a small residential cleanup or a large commercial build.</p>
+        <p class="text-gray-600 mb-6">We guarantee a detailed quote within 24 hours of your inquiry, ensuring you have the information you need to proceed with confidence. Factors influencing your price include project scale, material types, timeline urgency, and any specialized cleaning demands.</p>
+        <p class="text-gray-600">Contact us today for a no-obligation estimate, customized to deliver exceptional value and results.</p>
+        <a href="#contact" class="mt-6 inline-flex items-center bg-navy-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-navy-700 transition-colors">
+          Get Your Custom Quote
+        </a>
+      </div>
+    </div>
+    <script>
+      document.addEventListener('scroll', () => {
+        const services = document.getElementById('services');
+        if (services) {
+          const rect = services.getBoundingClientRect();
+          if (rect.top < window.innerHeight) {
+            services.querySelectorAll('.fade-in').forEach((el, index) => {
+              el.classList.add('visible');
+            });
+          }
+        }
+      });
+    </script>
+  </section>
 
-    <!-- Footer Section -->
-    <footer style="background-color: #0a74da; color: white; padding: 20px; text-align: center;">
-        <p style="font-family: 'Poppins', sans-serif; font-size: 16px;">&copy; 2025 Zenclean. All rights reserved.</p>
-    </footer>
+  <!-- About Us -->
+  <section class="py-16 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-navy-900">About Us</h2>
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <p class="text-lg text-gray-600 mb-6">Founded in 2020, ZenClean Solutions specializes in transforming post-construction chaos into pristine environments. With a team of certified experts and advanced cleaning technology, we ensure your space is ready for occupancy with unmatched precision.</p>
+          <p class="text-lg text-gray-600">Our mission is to set the industry standard through innovation, sustainability, and client satisfaction, delivering tailored solutions for residential and commercial projects alike.</p>
+        </div>
+        <div>
+          <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&q=80&w=600" alt="Team at work" class="rounded-lg shadow-md">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-navy-900">Contact Us</h2>
+      <p class="text-lg text-gray-600 text-center mb-12">Reach out for a customized quote or to discuss your project needs. We’re here to help!</p>
+      <form id="contactForm" class="space-y-6 max-w-xl mx-auto">
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-2">Full Name</label>
+          <input type="text" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-500 focus:border-gold-500" placeholder="Your Name">
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+          <input type="email" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-500 focus:border-gold-500" placeholder="your@email.com">
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-2">Phone</label>
+          <input type="tel" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-500 focus:border-gold-500" placeholder="+1-234-567-8900">
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+          <textarea rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-500 focus:border-gold-500" placeholder="Describe your project..."></textarea>
+        </div>
+        <button type="submit" class="w-full bg-navy-900 text-white py-3 px-6 rounded-lg font-semibold hover:bg-navy-700 transition-colors">Submit Inquiry</button>
+      </form>
+      <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+          e.preventDefault();
+          const formData = {
+            name: this.querySelector('input[type="text"]').value,
+            email: this.querySelector('input[type="email"]').value,
+            phone: this.querySelector('input[type="tel"]').value,
+            message: this.querySelector('textarea').value
+          };
+          console.log('Form submitted:', formData);
+          alert('Thank you! We will contact you soon.');
+          this.reset();
+        });
+      </script>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-navy-900 text-white py-8">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <p class="mb-4">© 2025 ZenClean Solutions. All rights reserved.</p>
+      <p class="text-gray-400">123 Precision Lane, Metro City, MC 12345 | info@zenclean.com | (555) 123-4567</p>
+      <div class="mt-4 flex justify-center space-x-4">
+        <a href="#" class="text-gray-400 hover:text-gold-500">Facebook</a>
+        <a href="#" class="text-gray-400 hover:text-gold-500">Twitter</a>
+        <a href="#" class="text-gray-400 hover:text-gold-500">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
