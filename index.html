@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ZenClean</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.3/dist/tailwind.min.css" rel="stylesheet">
   <style>
     body {
@@ -22,6 +22,8 @@
       border-radius: 15px;
       padding: 20px;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background-size: cover;
+      background-position: center;
     }
 
     .service-box:hover {
@@ -63,6 +65,58 @@
     .bg-dark {
       background-color: #2d3748;
     }
+
+    .contact-section {
+      background-image: url('https://images.unsplash.com/photo-1572375682172-bf509dba75f4?auto=format&fit=crop&w=500&dpr=2');
+      background-size: cover;
+      background-position: center;
+      padding: 80px 0;
+    }
+
+    .contact-form {
+      background: rgba(255, 255, 255, 0.85);
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .contact-form h3 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .contact-form input, .contact-form textarea {
+      background-color: #f3f4f6;
+      border: none;
+      padding: 15px;
+      border-radius: 10px;
+      width: 100%;
+      margin-bottom: 15px;
+      font-size: 1rem;
+    }
+
+    .contact-form button {
+      background-color: #0072ff;
+      color: white;
+      padding: 15px;
+      border-radius: 10px;
+      font-size: 1.2rem;
+      width: 100%;
+      cursor: pointer;
+    }
+
+    .contact-form button:hover {
+      background-color: #0056b3;
+    }
+
+    .side-text {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.2rem;
+      color: #fff;
+      margin-bottom: 20px;
+    }
   </style>
 </head>
 <body class="bg-gray-50 text-gray-900">
@@ -81,142 +135,9 @@
     </div>
   </header>
 
-  <!-- Before/After Section -->
+  <!-- Service Boxes Section -->
   <section class="py-20 bg-gray-50">
     <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-5xl font-bold text-center mb-16 text-primary">Transformation Gallery</h2>
-      <div class="grid md:grid-cols-2 gap-8">
-        <div class="space-y-4">
-          <div class="grid grid-cols-2 gap-4">
-            <div class="relative">
-              <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd" alt="Before cleaning" class="w-full h-64 object-cover rounded-lg" />
-              <span class="absolute top-4 left-4 bg-black bg-opacity-50 text-white px-4 py-1 rounded">Before</span>
-            </div>
-            <div class="relative">
-              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="After cleaning" class="w-full h-64 object-cover rounded-lg" />
-              <span class="absolute top-4 left-4 bg-blue-500 text-white px-4 py-1 rounded">After</span>
-            </div>
-          </div>
-        </div>
-        <div class="space-y-4">
-          <div class="grid grid-cols-2 gap-4">
-            <div class="relative">
-              <img src="https://images.unsplash.com/photo-1590725140246-20acdee442be" alt="Before cleaning" class="w-full h-64 object-cover rounded-lg" />
-              <span class="absolute top-4 left-4 bg-black bg-opacity-50 text-white px-4 py-1 rounded">Before</span>
-            </div>
-            <div class="relative">
-              <img src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b" alt="After cleaning" class="w-full h-64 object-cover rounded-lg" />
-              <span class="absolute top-4 left-4 bg-blue-500 text-white px-4 py-1 rounded">After</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Services Section -->
-  <section class="py-20">
-    <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-5xl font-extrabold text-center mb-6 text-primary">Our Comprehensive Service</h2>
-      <p class="text-xl text-gray-600 text-center mb-16 max-w-3xl mx-auto">
-        Our post-construction cleaning service is meticulously designed to transform your newly constructed or renovated space into a pristine, move-in ready environment. We combine advanced technology with expert knowledge to ensure no detail is overlooked.
-      </p>
+      <h2 class="text-5xl font-bold text-center mb-16 text-primary">Our Comprehensive Service</h2>
       <div class="grid md:grid-cols-3 gap-8">
-        <div class="service-box text-white">
-          <span class="text-4xl mb-4">✨</span>
-          <h3 class="text-2xl font-semibold mb-3">Deep Dust Removal</h3>
-          <p class="text-gray-200 leading-relaxed">
-            Using HEPA filtration systems and advanced air scrubbers, we eliminate construction dust from every surface, including hard-to-reach areas. Our thorough process ensures superior air quality and a truly clean environment.
-          </p>
-        </div>
-        <div class="service-box text-white">
-          <span class="text-4xl mb-4">🏗️</span>
-          <h3 class="text-2xl font-semibold mb-3">Debris Hauling</h3>
-          <p class="text-gray-200 leading-relaxed">
-            Professional removal of all construction waste, including proper sorting and disposal of materials. We handle everything from large debris to the finest particles, ensuring your space is completely clear.
-          </p>
-        </div>
-        <div class="service-box text-white">
-          <span class="text-4xl mb-4">🛡️</span>
-          <h3 class="text-2xl font-semibold mb-3">Air Quality Testing</h3>
-          <p class="text-gray-200 leading-relaxed">
-            Scientific measurement of air particulates using state-of-the-art sensors. We conduct before and after testing to ensure your space meets or exceeds air quality standards.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Personalized Pricing Section -->
-  <section class="py-20 bg-gray-800 text-white">
-    <div class="max-w-4xl mx-auto px-4">
-      <h2 class="text-5xl font-bold text-center mb-6 text-primary">Personalized Pricing</h2>
-      <p class="text-xl text-gray-300 text-center mb-8">
-        We offer custom quotes tailored to your unique project. Tell us about your space and needs, and we'll get back to you with a personalized quote within 24 hours.
-      </p>
-      <div class="bg-box">
-        <h3 class="text-2xl font-semibold mb-6">Factors We Consider:</h3>
-        <div class="grid md:grid-cols-2 gap-8 mb-8">
-          <div class="flex items-center text-gray-700">
-            <span class="text-primary">&#10004;</span> Project size and scope
-          </div>
-          <div class="flex items-center text-gray-700">
-            <span class="text-primary">&#10004;</span> Type of construction
-          </div>
-          <div class="flex items-center text-gray-700">
-            <span class="text-primary">&#10004;</span> Timeline requirements
-          </div>
-          <div class="flex items-center text-gray-700">
-            <span class="text-primary">&#10004;</span> Specific cleaning needs
-          </div>
-          <div class="flex items-center text-gray-700">
-            <span class="text-primary">&#10004;</span> Surface materials
-          </div>
-          <div class="flex items-center text-gray-700">
-            <span class="text-primary">&#10004;</span> Access requirements
-          </div>
-        </div>
-        <a href="#contact" class="inline-flex items-center bg-blue-600 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors button-hover">
-          Request a Quote
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Form Section -->
-  <section id="contact" class="py-20 bg-gray-800 text-white">
-    <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-5xl font-bold text-center mb-6 text-primary">Contact Us</h2>
-      <p class="text-xl text-gray-300 text-center mb-12">
-        Fill out the form below to request a quote or learn more about our services.
-      </p>
-      <form action="#" method="POST" class="space-y-6 max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-lg">
-        <div class="flex space-x-4">
-          <div class="w-full">
-            <label for="name" class="block text-gray-700 font-semibold mb-2">Name</label>
-            <input type="text" id="name" name="name" class="w-full border border-gray-300 p-3 rounded-md" required />
-          </div>
-          <div class="w-full">
-            <label for="email" class="block text-gray-700 font-semibold mb-2">Email</label>
-            <input type="email" id="email" name="email" class="w-full border border-gray-300 p-3 rounded-md" required />
-          </div>
-        </div>
-        <div>
-          <label for="message" class="block text-gray-700 font-semibold mb-2">Message</label>
-          <textarea id="message" name="message" class="w-full border border-gray-300 p-3 rounded-md" rows="4" required></textarea>
-        </div>
-        <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors button-hover">
-          Submit
-        </button>
-      </form>
-    </div>
-  </section>
-
-  <footer class="bg-dark text-white py-12">
-    <div class="max-w-6xl mx-auto px-4 text-center">
-      <p>&copy; 2025 ZenClean. All rights reserved.</p>
-    </div>
-  </footer>
-
-</body>
-</html>
+        <div class="service-box" style="background-image: url('https://images.unsplash.com/photo-158763405809
