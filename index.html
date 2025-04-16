@@ -3,12 +3,122 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ZenClean Website</title>
-  <link rel="icon" href="/favicon.ico">
+  <title>ZenClean - Post-Construction Cleaning</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-  <div id="root"></div>
-  <!-- Correcting the script path to relative -->
-  <script type="module" src="./src/main.tsx"></script>
-</body>
-</html>
+<body class="font-sans antialiased">
+
+  <div class="min-h-screen bg-white">
+    <!-- Hero Section -->
+    <header class="relative h-screen flex items-center justify-center bg-gradient-to-r from-gray-900 to-gray-800 text-white">
+      <div class="absolute inset-0">
+        <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&q=80" alt="Construction site" class="w-full h-full object-cover opacity-30">
+      </div>
+      <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
+        <h1 class="text-5xl md:text-7xl font-bold mb-6">From Chaos to Clean</h1>
+        <p class="text-2xl md:text-3xl mb-8 text-gray-200">Post-Construction Experts</p>
+        <a href="#contact" class="inline-flex items-center bg-emerald-500 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-emerald-600 transition-colors">
+          Get Started <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M12.207 8.293a1 1 0 0 1 0 1.414L7.414 15H11a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2h3.586L3.793 9.707a1 1 0 0 1 1.414-1.414l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414l3.586-3.586H4a1 1 0 0 1 0-2h5.586l4.793-4.793a1 1 0 0 1 1.414 0z"></path></svg>
+        </a>
+      </div>
+    </header>
+
+    <!-- Before/After Section -->
+    <section class="py-20 bg-gray-50">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center mb-16">Transformation Gallery</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="space-y-4">
+            <div class="grid grid-cols-2 gap-4">
+              <div class="relative">
+                <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd" alt="Before cleaning" class="w-full h-64 object-cover rounded-lg" />
+                <span class="absolute top-4 left-4 bg-black bg-opacity-50 text-white px-4 py-1 rounded">Before</span>
+              </div>
+              <div class="relative">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="After cleaning" class="w-full h-64 object-cover rounded-lg" />
+                <span class="absolute top-4 left-4 bg-emerald-500 text-white px-4 py-1 rounded">After</span>
+              </div>
+            </div>
+          </div>
+          <div class="space-y-4">
+            <div class="grid grid-cols-2 gap-4">
+              <div class="relative">
+                <img src="https://images.unsplash.com/photo-1590725140246-20acdee442be" alt="Before cleaning" class="w-full h-64 object-cover rounded-lg" />
+                <span class="absolute top-4 left-4 bg-black bg-opacity-50 text-white px-4 py-1 rounded">Before</span>
+              </div>
+              <div class="relative">
+                <img src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b" alt="After cleaning" class="w-full h-64 object-cover rounded-lg" />
+                <span class="absolute top-4 left-4 bg-emerald-500 text-white px-4 py-1 rounded">After</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-20">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center mb-6">Our Comprehensive Service</h2>
+        <p class="text-xl text-gray-600 text-center mb-16 max-w-3xl mx-auto">
+          Our post-construction cleaning service is meticulously designed to transform your newly constructed or renovated space into a pristine, move-in ready environment. We combine advanced technology with expert knowledge to ensure no detail is overlooked.
+        </p>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-white p-8 rounded-lg shadow-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-emerald-500 mb-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="16" x2="12" y2="12"></line>
+              <line x1="8" y1="12" x2="16" y2="12"></line>
+            </svg>
+            <h3 class="text-xl font-semibold mb-3">Deep Dust Removal</h3>
+            <p class="text-gray-600 leading-relaxed">
+              Using HEPA filtration systems and advanced air scrubbers, we eliminate construction dust from every surface, including hard-to-reach areas. Our thorough process ensures superior air quality and a truly clean environment.
+            </p>
+          </div>
+          <div class="bg-white p-8 rounded-lg shadow-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-emerald-500 mb-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 2L3 8l14 6V8h7V2h-7z"></path>
+            </svg>
+            <h3 class="text-xl font-semibold mb-3">Debris Hauling</h3>
+            <p class="text-gray-600 leading-relaxed">
+              Professional removal of all construction waste, including proper sorting and disposal of materials. We handle everything from large debris to the finest particles, ensuring your space is completely clear.
+            </p>
+          </div>
+          <div class="bg-white p-8 rounded-lg shadow-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-emerald-500 mb-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 3h18v18H3z"></path>
+            </svg>
+            <h3 class="text-xl font-semibold mb-3">Air Quality Testing</h3>
+            <p class="text-gray-600 leading-relaxed">
+              Scientific measurement of air particulates using state-of-the-art sensors. We conduct before and after testing to ensure your space meets or exceeds air quality standards.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="grid md:grid-cols-4 gap-8">
+          <div>
+            <h3 class="text-xl font-bold mb-4">ZenClean</h3>
+            <p class="text-gray-400">Professional post-construction cleaning services</p>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-4">Contact</h4>
+            <p class="text-gray-400">1234 Clean Street</p>
+            <p class="text-gray-400">City, State 12345</p>
+            <p class="text-gray-400">contact@zenclean.com</p>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-4">Hours</h4>
+            <p class="text-gray-400">Mon-Fri: 8am - 6pm</p>
+            <p class="text-gray-400">Sat: 9am - 4pm</p>
+            <p class="text-gray-400">24/7 Emergency Service</p>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-4">Follow Us
+
+            
