@@ -1,228 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="ZenClean - Expert post-construction cleaning services transforming chaotic sites into pristine spaces.">
-  <meta name="keywords" content="post-construction cleaning, debris removal, air quality testing, ZenClean">
-  <meta name="author" content="ZenClean Solutions">
-  <title>ZenClean - Post-Construction Cleaning Experts</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ZenClean Solutions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: 'Poppins', sans-serif;
-      background-color: #F3F4F6;
-      color: #1F2937;
+      font-family: 'Outfit', sans-serif;
+      background: #f8f9fa;
+      color: #333;
+      line-height: 1.6;
     }
-    .hero-bg {
-      background: linear-gradient(90deg, #1E40AF 0%, #3B82F6 100%);
+
+    header {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                  url('https://images.unsplash.com/photo-1600585154500-2116b09f2f38?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 120px 20px;
     }
-    .fade-in {
-      opacity: 0;
-      transform: translateY(20px);
-      transition: opacity 0.6s ease, transform 0.6s ease;
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
     }
-    .fade-in.visible {
-      opacity: 1;
-      transform: translateY(0);
+
+    header p {
+      font-size: 1.3rem;
+      max-width: 600px;
+      margin: 0 auto;
     }
-    @keyframes slide-up {
-      from { transform: translateY(50px); opacity: 0; }
-      to { transform: translateY(0); opacity: 1; }
+
+    .section {
+      padding: 80px 20px;
+      max-width: 1200px;
+      margin: auto;
     }
-    .slide-up {
-      animation: slide-up 0.8s ease-out forwards;
+
+    .intro {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      align-items: center;
     }
-    @media (max-width: 640px) {
-      .hero-text { font-size: 2rem; }
-      .before-after img { height: 200px; }
+
+    .intro img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    }
+
+    .intro-text {
+      flex: 1;
+    }
+
+    .intro-text h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .intro-text p {
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+    .pricing {
+      background: linear-gradient(135deg, #e0f7fa, #ffffff);
+      padding: 60px 20px;
+    }
+
+    .pricing h2 {
+      text-align: center;
+      font-size: 2.2rem;
+      margin-bottom: 40px;
+    }
+
+    .price-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      padding: 30px;
+      width: 300px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 36px rgba(0,0,0,0.2);
+    }
+
+    .card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #666;
+    }
+
+    .card .price {
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin-top: 20px;
+      color: #00796b;
+    }
+
+    .contact {
+      background: #f1f1f1;
+      padding: 80px 20px;
+    }
+
+    .contact h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+
+    .contact-content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      align-items: flex-start;
+      justify-content: center;
+    }
+
+    .contact-image {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .contact-image img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    }
+
+    form {
+      flex: 1;
+      min-width: 300px;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+
+    form button {
+      padding: 12px 24px;
+      background: #00796b;
+      color: white;
+      border: none;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    form button:hover {
+      background: #004d40;
+    }
+
+    footer {
+      background: #212121;
+      color: #ccc;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    @media(max-width: 768px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+
+      .intro {
+        flex-direction: column;
+      }
+
+      .contact-content {
+        flex-direction: column;
+      }
+
+      .card {
+        width: 90%;
+      }
     }
   </style>
 </head>
-<body class="min-h-screen">
-  <!-- Hero Section -->
-  <header class="hero-bg text-white py-20 text-center">
-    <div class="container mx-auto px-4">
-      <h1 class="text-5xl md:text-6xl font-bold mb-4 fade-in visible">From Chaos to Clean — Post-Construction Experts</h1>
-      <p class="text-xl md:text-2xl mb-6 fade-in visible">Transform your construction site with ZenClean's precision cleaning.</p>
-      <a href="#contact" class="bg-white text-1E40AF px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition-colors">Get a Free Quote</a>
-    </div>
+<body>
+  <header>
+    <h1>ZenClean Solutions</h1>
+    <p>Professional Post-Construction Cleaning with Smart Inspections & Air Quality Tech</p>
   </header>
 
-  <!-- Before and After Section -->
-  <section class="py-16 bg-white">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-8 fade-in" data-aos="fade-up">Before & After Cleaning</h2>
-      <div class="grid md:grid-cols-2 gap-8">
-        <div class="relative">
-          <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80&w=600" alt="Before Cleaning" class="w-full h-64 object-cover rounded-lg slide-up" data-aos="slide-up">
-          <span class="absolute top-4 left-4 bg-1E40AF text-white px-2 py-1 rounded">Before</span>
-        </div>
-        <div class="relative">
-          <img src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&q=80&w=600" alt="After Cleaning" class="w-full h-64 object-cover rounded-lg slide-up" data-aos="slide-up">
-          <span class="absolute top-4 left-4 bg-1E40AF text-white px-2 py-1 rounded">After</span>
-        </div>
+  <section class="section intro">
+    <img src="https://images.unsplash.com/photo-1581092160614-b8b1b1c00e56?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Cleaning Image">
+    <div class="intro-text">
+      <h2>We Bring Your Construction Site to Life</h2>
+      <p>ZenClean uses cutting-edge drone inspections and AI-powered cleaning validation, plus smart sensors for real-time air quality checks. Our teams ensure your project transitions from construction to ready-for-use seamlessly and professionally.</p>
+    </div>
+  </section>
+
+  <section class="pricing">
+    <h2>Custom Pricing Options</h2>
+    <div class="price-cards">
+      <div class="card">
+        <h3>Basic Clean ✨</h3>
+        <p>Ideal for small spaces, includes surface wipe-down, debris removal, and window cleaning.</p>
+        <div class="price">$250+</div>
+      </div>
+      <div class="card">
+        <h3>Smart Clean 🧠</h3>
+        <p>Includes full surface cleaning, smart air quality test, and drone inspection photos.</p>
+        <div class="price">$450+</div>
+      </div>
+      <div class="card">
+        <h3>Pro Clean 🛠️</h3>
+        <p>Complete deep clean, AI inspection, smart sensors, dust test, and detailed PDF report.</p>
+        <div class="price">$750+</div>
       </div>
     </div>
   </section>
 
-  <!-- Services Section -->
-  <section class="py-16 bg-gray-50">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-8 fade-in" data-aos="fade-up">What’s Included</h2>
-      <div class="grid md:grid-cols-2 gap-6">
-        <div class="p-6 bg-white rounded-lg shadow-md slide-up" data-aos="slide-up" data-aos-delay="100">
-          <h3 class="text-xl font-semibold mb-2">Dust Removal</h3>
-          <p class="text-gray-600">Utilizing HEPA filtration to eliminate construction dust from all surfaces.</p>
-        </div>
-        <div class="p-6 bg-white rounded-lg shadow-md slide-up" data-aos="slide-up" data-aos-delay="200">
-          <h3 class="text-xl font-semibold mb-2">Debris Hauling</h3>
-          <p class="text-gray-600">Efficient removal and eco-friendly disposal of all construction waste.</p>
-        </div>
-        <div class="p-6 bg-white rounded-lg shadow-md slide-up" data-aos="slide-up" data-aos-delay="300">
-          <h3 class="text-xl font-semibold mb-2">Fine Detailing</h3>
-          <p class="text-gray-600">Meticulous cleaning of windows, fixtures, and trim for a flawless finish.</p>
-        </div>
-        <div class="p-6 bg-white rounded-lg shadow-md slide-up" data-aos="slide-up" data-aos-delay="400">
-          <h3 class="text-xl font-semibold mb-2">Air Quality Testing</h3>
-          <p class="text-gray-600">Certified testing to ensure a healthy, dust-free environment.</p>
-        </div>
+  <section class="contact">
+    <h2>Let's Talk Cleaning</h2>
+    <div class="contact-content">
+      <div class="contact-image">
+        <img src="https://images.unsplash.com/photo-1588776814546-b2acb6a26be3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Contact Image">
       </div>
-    </div>
-  </section>
-
-  <!-- Emergency Services Callout -->
-  <section class="py-12 bg-1E40AF text-white text-center">
-    <div class="container mx-auto px-4">
-      <h2 class="text-2xl font-bold mb-4 fade-in" data-aos="fade-up">Emergency Cleaning Services</h2>
-      <p class="text-lg mb-4">24/7 response for urgent post-construction needs.</p>
-      <a href="tel:1800ZENCLN" class="bg-white text-1E40AF px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition-colors">Call Now: 1-800-ZEN-CLN</a>
-    </div>
-  </section>
-
-  <!-- Testimonials Section -->
-  <section class="py-16 bg-white">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-8 fade-in" data-aos="fade-up">Client Testimonials</h2>
-      <div class="grid md:grid-cols-2 gap-8">
-        <div class="p-6 bg-gray-50 rounded-lg shadow-md slide-up" data-aos="slide-up" data-aos-delay="100">
-          <p class="text-gray-600 italic mb-4">"ZenClean’s expertise transformed our site into a pristine space, exceeding our expectations with meticulous attention to detail."</p>
-          <p class="font-semibold">John D., Commercial Developer</p>
-          <div class="mt-2 h-10 flex items-center">
-            <img src="https://via.placeholder.com/100x40?text=Client+Logo" alt="Client Logo" class="h-full">
-          </div>
-        </div>
-        <div class="p-6 bg-gray-50 rounded-lg shadow-md slide-up" data-aos="slide-up" data-aos-delay="200">
-          <p class="text-gray-600 italic mb-4">"Their professional approach and eco-friendly methods delivered outstanding results on a tight schedule."</p>
-          <p class="font-semibold">Sarah M., Project Manager</p>
-          <div class="mt-2 h-10 flex items-center">
-            <img src="https://via.placeholder.com/100x40?text=Client+Logo" alt="Client Logo" class="h-full">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Pricing Section -->
-  <section class="py-16 bg-gray-50">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-8 fade-in" data-aos="fade-up">Pricing Packages</h2>
-      <div class="grid md:grid-cols-3 gap-6">
-        <div class="p-6 bg-white rounded-lg shadow-md text-center slide-up" data-aos="slide-up" data-aos-delay="100">
-          <h3 class="text-xl font-semibold mb-2">Basic</h3>
-          <p class="text-gray-600 mb-4">Starting at $200</p>
-          <ul class="text-gray-600">
-            <li>Dust Removal</li>
-            <li>Debris Hauling</li>
-          </ul>
-        </div>
-        <div class="p-6 bg-white rounded-lg shadow-md text-center slide-up" data-aos="slide-up" data-aos-delay="200">
-          <h3 class="text-xl font-semibold mb-2">Deep Clean</h3>
-          <p class="text-gray-600 mb-4">Starting at $400</p>
-          <ul class="text-gray-600">
-            <li>All Basic Features</li>
-            <li>Fine Detailing</li>
-            <li>Air Quality Testing</li>
-          </ul>
-        </div>
-        <div class="p-6 bg-white rounded-lg shadow-md text-center slide-up" data-aos="slide-up" data-aos-delay="300">
-          <h3 class="text-xl font-semibold mb-2">Premium</h3>
-          <p class="text-gray-600 mb-4">Starting at $600</p>
-          <ul class="text-gray-600">
-            <li>All Deep Clean Features</li>
-            <li>Priority Scheduling</li>
-            <li>Post-Clean Report</li>
-          </ul>
-        </div>
-      </div>
-      <p class="text-center text-gray-600 mt-6">Quotes provided within 24 hours, tailored to your project’s unique needs.</p>
-    </div>
-  </section>
-
-  <!-- About Us Section -->
-  <section class="py-16 bg-white">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-8 fade-in" data-aos="fade-up">About Us</h2>
-      <div class="grid md:grid-cols-2 gap-8 items-center">
-        <div>
-          <p class="text-gray-600">Since 2020, ZenClean has set the standard in post-construction cleaning with a focus on professionalism. We leverage smart sensors for air quality monitoring and drone inspections for comprehensive site assessment, ensuring fast turnarounds without compromising quality.</p>
-        </div>
-        <div>
-          <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&q=80&w=300" alt="Team at Work" class="rounded-lg shadow-md slide-up" data-aos="slide-up">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="py-16 bg-gray-50">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-8 fade-in" data-aos="fade-up">Contact Us</h2>
-      <p class="text-center text-gray-600 mb-12">Let’s discuss your post-construction cleaning needs. Get a free quote today!</p>
-      <form class="max-w-lg mx-auto space-y-6 bg-white p-6 rounded-lg shadow-md slide-up" data-aos="slide-up">
-        <div>
-          <label class="block text-sm font-medium text-gray-700 mb-2">Full Name</label>
-          <input type="text" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-1E40AF focus:border-1E40AF" placeholder="Your Name">
-        </div>
-        <div>
-          <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
-          <input type="email" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-1E40AF focus:border-1E40AF" placeholder="your@email.com">
-        </div>
-        <div>
-          <label class="block text-sm font-medium text-gray-700 mb-2">Phone</label>
-          <input type="tel" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-1E40AF focus:border-1E40AF" placeholder="+1-234-567-8900">
-        </div>
-        <div>
-          <label class="block text-sm font-medium text-gray-700 mb-2">Message</label>
-          <textarea rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-1E40AF focus:border-1E40AF" placeholder="Describe your project..."></textarea>
-        </div>
-        <button type="submit" class="w-full bg-1E40AF text-white py-3 px-6 rounded-lg font-semibold hover:bg-3B82F6 transition-colors slide-up" data-aos="slide-up">Get a Free Quote</button>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Tell us about your project..." rows="5" required></textarea>
+        <button type="submit">Request a Quote</button>
       </form>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-1E40AF text-white py-8">
-    <div class="container mx-auto px-4 text-center">
-      <p class="mb-2">© 2025 ZenClean Solutions. All rights reserved.</p>
-      <p class="text-gray-200">123 Clean Street, City, State 12345 | info@zencleansolutions.com | (555) 123-4567</p>
-      <div class="mt-4 flex justify-center space-x-4">
-        <a href="#" class="text-gray-200 hover:text-white">Facebook</a>
-        <a href="#" class="text-gray-200 hover:text-white">Twitter</a>
-        <a href="#" class="text-gray-200 hover:text-white">LinkedIn</a>
-      </div>
-    </div>
+  <footer>
+    &copy; 2025 ZenClean Solutions. All rights reserved.
   </footer>
-
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init({ duration: 1000 });
-    document.addEventListener('scroll', () => {
-      document.querySelectorAll('.fade-in').forEach(el => {
-        if (el.getBoundingClientRect().top < window.innerHeight) el.classList.add('visible');
-      });
-    });
-  </script>
 </body>
 </html>
